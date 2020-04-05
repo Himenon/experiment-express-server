@@ -10,7 +10,7 @@ const express = require("express");
 const middleware = (req, res, next) => {
   setTimeout(() => {
     next();
-  }, 100);
+  }, 10000);
 }
 
 module.exports = middleware;

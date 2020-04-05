@@ -10,3 +10,5 @@ console.log(ReactDOM);
 //   link.href = "/assets/css/main.css";
 //   document.querySelector("head").appendChild(link);
 // }, 3000);
+
+console.log({ target: document.querySelector("#target") });
