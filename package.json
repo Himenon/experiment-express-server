@@ -1,5 +1,5 @@
 {
-  "name": "express-mvc",
+  "name": "@himenon/express-performance",
   "version": "1.0.0",
   "main": "src/server.js",
   "license": "MIT",

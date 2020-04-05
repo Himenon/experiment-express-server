@@ -16,8 +16,8 @@ const create = (app) => {
   }));
   // TTFB(time to first byte)対策
   // 真っ先にhtmlのheadタグを返すことでパフォーマンスのスコアを更新する
-  app.use(htmlStart);
-  app.use(slowApi); // 
+  app.use("/slow", htmlStart);
+  app.use("/slow", slowApi);
 }
 
 module.exports = create;
