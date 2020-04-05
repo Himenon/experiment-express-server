@@ -1,23 +1,8 @@
-# express-mvc
+# reduce TTFB
 
-## Setup
-
-```bash
-git clone https://github.com/Himenon/express-mvc.git
-cd express-mvc
-yarn
-```
-
-## Development
-
-```bash
-yarn server
-```
-
-
-## build
+## Usage
 
 ```
-yarn build          # run docker build
-yarn server:docker  # run server on docker
+yarn start
 ```
+

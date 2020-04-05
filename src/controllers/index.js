@@ -1,6 +1,7 @@
 // @ts-check
 const express = require("express");
 const home = require("./home");
+const slow = require("./slow");
 
 /**
  * 
@@ -8,6 +9,7 @@ const home = require("./home");
  */
 const create = (app) => {
   app.use("/home", home);
+  app.use("/slow", slow);
 }
 
 module.exports = create;
