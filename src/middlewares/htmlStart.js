@@ -8,11 +8,16 @@ const HTML_START_TEMPLATE = [
   `<head>`,
   `<meta charset="utf-8">`,
   `<title>厄介なページ</title>`,
+  `<link rel="preload" href="/assets/js/react.development.js" as="script">`,
+  `<link rel="preload" href="/assets/js/react-dom.development.js" as="script">`,
+  `<link rel="preload" href="/assets/js/main.js" as="script">`,
+  `<link rel="preload" href="/assets/css/main.css" as="style">`,
   `<style>* { padding: 0; margin: 0 } #wrapper { width: 640px; }`,
   `.box { list-style: none; display: flex; flex-direction: row; flex-wrap: wrap; }`,
   `.box li { width: 50px; height: 50px; border: 1px solid #333; }</style>`,
   `</head>`,
   `<body>`,
+  `<p id="loading">Now loading</p>`,
 ].join(os.EOL);
 
 /**
