@@ -1,5 +1,6 @@
 // @ts-check
 const express = require("express");
+const os = require("os");
 
 const HTML_START_TEMPLATE = [
   "<!DOCTYPE html>",
@@ -9,10 +10,10 @@ const HTML_START_TEMPLATE = [
   `<title>厄介なページ</title>`,
   `<style>* { padding: 0; margin: 0 } #wrapper { width: 640px; }`,
   `.box { list-style: none; display: flex; flex-direction: row; flex-wrap: wrap; }`,
-  `.box li { width: 5px; height: 5px; background-color: #333; }</style>`,
+  `.box li { width: 50px; height: 50px; border: 1px solid #333; }</style>`,
   `</head>`,
   `<body>`,
-].join("");
+].join(os.EOL);
 
 /**
  * HTML Headerを送信する
