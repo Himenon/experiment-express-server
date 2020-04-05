@@ -1,0 +1,9 @@
+version: "3.4"
+
+services:
+  server:
+    build: .
+    volumes:
+      - ./src:/workdir/src
+    env_file:
+      - .env
