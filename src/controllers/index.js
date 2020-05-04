@@ -1,5 +1,6 @@
 // @ts-check
 const express = require("express");
+const blockingHtmlParse = require("./blocking-html-parse");
 const home = require("./home");
 const slow = require("./slow");
 const path = require("path");
@@ -10,6 +11,7 @@ const path = require("path");
  */
 const create = (app) => {
   app.use("/home", home);
+  app.use("/blocking-html-parse", blockingHtmlParse);
   app.use("/slow", slow);
   app.use("/assets", express.static(path.join(__dirname, "../assets/")));
 }
