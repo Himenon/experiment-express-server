@@ -1,4 +1,4 @@
-FROM node:12.9.1-alpine
+FROM node:12.18.2-alpine
 
 ENV TZ "Asia/Tokyo"
 
